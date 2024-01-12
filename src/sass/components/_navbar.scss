@@ -1,0 +1,52 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.563rem;
+    position: absolute;
+    top: 2.813rem;
+    z-index: 99;
+    .navRoam{
+        position: absolute;
+        z-index: -1;
+        width: 6.688rem;
+        height: 3.938rem;
+        left:-0.625rem;
+        padding: $padding-10;
+        background-color: #8075FF;
+        border-radius: $br-15;
+        transition: 0.3s;
+    }
+    .navbtns{
+        color: map-get($map: $colors, $key: 'white');
+        font-size: map-get($map: $fonts, $key: '25');
+        font-weight: 400;
+    }
+}
+
+.navbar-bot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.563rem;
+    position: absolute;
+    bottom: 2.813rem;
+    z-index: 99;
+    .navRoam{
+        position: absolute;
+        z-index: -1;
+        width: 7.625rem;
+        height: 3.938rem;
+        left:-0.625rem;
+        padding: $padding-10;
+        background-color: #8075FF;
+        border-radius: $br-15;
+        transition: 0.3s;
+    }
+    .navbtns{
+        color: map-get($map: $colors, $key: 'white');
+        font-size: map-get($map: $fonts, $key: '25');
+        font-weight: 400;
+        cursor: pointer;
+    }
+}

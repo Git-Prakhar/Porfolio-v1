@@ -1,0 +1,113 @@
+.df{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.df-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.dis-off{
+    display: none;
+    animation: fade-in 0.5s forwards;
+}
+
+.ai-fs-col{
+    align-items: flex-start;
+}
+
+.jc-fs{
+    justify-content: flex-start;
+}
+
+// .ap-active{
+//     animation: fade-in 0.5s forwards;
+// }
+
+@keyframes fade-in {
+    from{
+        opacity: 0;
+        transform: translateX(10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fade-out {
+    from{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    to{
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-50{
+    width: 3.125rem;
+    height: 3.125rem;
+    object-fit: contain;
+}
+
+.img-35{
+    width: 2.188rem;
+    height: 2.188rem;
+    object-fit: contain;
+}
+
+.op-60{
+    opacity: 0.6;
+    transition: 0.3s;
+    &:hover{
+        opacity: 1;
+    }
+}
+
+.op-70{
+    opacity: 0.7;
+    transition: 0.3s;
+    &:hover{
+        opacity: 1;
+    }
+}
+
+.skillCircle{
+    position: relative;
+    width: 11.938rem;
+    height: 11.938rem;
+    background: conic-gradient(map-get($colors, 'blue') 3.6deg, map-get($colors, 'white') 0deg);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:0.125rem solid map-get($map: $colors, $key: 'white');
+    &::after{
+        content: '';
+        position: absolute;
+        width: 9.625rem;
+        height: 9.625rem;
+        border:0.125rem solid map-get($map: $colors, $key: 'white');
+        background-color: map-get($map: $colors, $key: 'black');
+        border-radius: 50%;
+    }
+    .skillCircleText{
+        position: relative;
+        z-index: 89;
+    }
+}

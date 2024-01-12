@@ -1,0 +1,49 @@
+//Variables
+@import './BaseFiles/variables';
+
+//Base file
+@import './BaseFiles/base';
+
+//Fonts : 
+@import './BaseFiles/fonts';
+@import './BaseFiles/colors';
+
+@import './components/navbar';
+@import './BaseFiles/display';
+@import './components/button';
+@import './components/card';
+
+.section {
+    height: 100vh;
+    background-color: map-get($map: $colors, $key: 'black');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.photo{
+    width: 350px;
+    height: 350px;
+    border: 5px solid map-get($map: $colors, $key: 'blue');
+    background-image: url('./images/myphoto.jpg');
+    background-position: center;
+    background-size: 600px 600px;
+    border-radius: 50% 30% 40% 20%;
+    animation-name: photoAnim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes photoAnim {
+    from{
+        border-radius: 50% 30% 40% 20%;
+    }
+    50%{
+        border-radius: 20% 50% 20% 60%;
+    }
+    to{
+        border-radius: 50% 30% 40% 20%;
+    }
+}

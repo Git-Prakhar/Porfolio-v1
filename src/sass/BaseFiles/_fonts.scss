@@ -1,0 +1,12 @@
+@import './variables';
+
+@each $key, $val in $fonts{
+    @for $i from 200 through 900{
+        @if($i== 200 or $i == 300 or $i==400 or $i==500 or $i==600 or $i==700 or $i == 800 or $i == 900){
+            .font-#{$key}-#{$i}{
+                font-size: $val;
+                font-weight: $i;
+            }
+        }
+    }
+}

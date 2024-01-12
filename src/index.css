@@ -1,13 +1,625 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Unbounded";
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.font-20-200 {
+  font-size: 1.25rem;
+  font-weight: 200;
+}
+
+.font-20-300 {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.font-20-400 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.font-20-500 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.font-20-600 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.font-20-700 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.font-20-800 {
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.font-20-900 {
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+.font-25-200 {
+  font-size: 1.563rem;
+  font-weight: 200;
+}
+
+.font-25-300 {
+  font-size: 1.563rem;
+  font-weight: 300;
+}
+
+.font-25-400 {
+  font-size: 1.563rem;
+  font-weight: 400;
+}
+
+.font-25-500 {
+  font-size: 1.563rem;
+  font-weight: 500;
+}
+
+.font-25-600 {
+  font-size: 1.563rem;
+  font-weight: 600;
+}
+
+.font-25-700 {
+  font-size: 1.563rem;
+  font-weight: 700;
+}
+
+.font-25-800 {
+  font-size: 1.563rem;
+  font-weight: 800;
+}
+
+.font-25-900 {
+  font-size: 1.563rem;
+  font-weight: 900;
+}
+
+.font-30-200 {
+  font-size: 1.875rem;
+  font-weight: 200;
+}
+
+.font-30-300 {
+  font-size: 1.875rem;
+  font-weight: 300;
+}
+
+.font-30-400 {
+  font-size: 1.875rem;
+  font-weight: 400;
+}
+
+.font-30-500 {
+  font-size: 1.875rem;
+  font-weight: 500;
+}
+
+.font-30-600 {
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+
+.font-30-700 {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.font-30-800 {
+  font-size: 1.875rem;
+  font-weight: 800;
+}
+
+.font-30-900 {
+  font-size: 1.875rem;
+  font-weight: 900;
+}
+
+.font-35-200 {
+  font-size: 2.188rem;
+  font-weight: 200;
+}
+
+.font-35-300 {
+  font-size: 2.188rem;
+  font-weight: 300;
+}
+
+.font-35-400 {
+  font-size: 2.188rem;
+  font-weight: 400;
+}
+
+.font-35-500 {
+  font-size: 2.188rem;
+  font-weight: 500;
+}
+
+.font-35-600 {
+  font-size: 2.188rem;
+  font-weight: 600;
+}
+
+.font-35-700 {
+  font-size: 2.188rem;
+  font-weight: 700;
+}
+
+.font-35-800 {
+  font-size: 2.188rem;
+  font-weight: 800;
+}
+
+.font-35-900 {
+  font-size: 2.188rem;
+  font-weight: 900;
+}
+
+.font-15-200 {
+  font-size: 0.938rem;
+  font-weight: 200;
+}
+
+.font-15-300 {
+  font-size: 0.938rem;
+  font-weight: 300;
+}
+
+.font-15-400 {
+  font-size: 0.938rem;
+  font-weight: 400;
+}
+
+.font-15-500 {
+  font-size: 0.938rem;
+  font-weight: 500;
+}
+
+.font-15-600 {
+  font-size: 0.938rem;
+  font-weight: 600;
+}
+
+.font-15-700 {
+  font-size: 0.938rem;
+  font-weight: 700;
+}
+
+.font-15-800 {
+  font-size: 0.938rem;
+  font-weight: 800;
+}
+
+.font-15-900 {
+  font-size: 0.938rem;
+  font-weight: 900;
+}
+
+.font-16-200 {
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.font-16-300 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.font-16-400 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.font-16-500 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.font-16-600 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.font-16-700 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.font-16-800 {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.font-16-900 {
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.text-black {
+  color: #303030;
+}
+
+.text-red {
+  color: #EF6351;
+}
+
+.text-blue {
+  color: #8075FF;
+}
+
+.text-white {
+  color: #F8F0FB;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.563rem;
+  position: absolute;
+  top: 2.813rem;
+  z-index: 99;
+}
+.navbar .navRoam {
+  position: absolute;
+  z-index: -1;
+  width: 6.688rem;
+  height: 3.938rem;
+  left: -0.625rem;
+  padding: 0.625rem;
+  background-color: #8075FF;
+  border-radius: 0.938rem;
+  transition: 0.3s;
+}
+.navbar .navbtns {
+  color: #F8F0FB;
+  font-size: 1.563rem;
+  font-weight: 400;
+}
+
+.navbar-bot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.563rem;
+  position: absolute;
+  bottom: 2.813rem;
+  z-index: 99;
+}
+.navbar-bot .navRoam {
+  position: absolute;
+  z-index: -1;
+  width: 7.625rem;
+  height: 3.938rem;
+  left: -0.625rem;
+  padding: 0.625rem;
+  background-color: #8075FF;
+  border-radius: 0.938rem;
+  transition: 0.3s;
+}
+.navbar-bot .navbtns {
+  color: #F8F0FB;
+  font-size: 1.563rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.df {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.df-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+}
+
+.dis-off {
+  display: none;
+  animation: fade-in 0.5s forwards;
+}
+
+.ai-fs-col {
+  align-items: flex-start;
+}
+
+.jc-fs {
+  justify-content: flex-start;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-50 {
+  width: 3.125rem;
+  height: 3.125rem;
+  object-fit: contain;
+}
+
+.img-35 {
+  width: 2.188rem;
+  height: 2.188rem;
+  object-fit: contain;
+}
+
+.op-60 {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+.op-60:hover {
+  opacity: 1;
+}
+
+.op-70 {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+.op-70:hover {
+  opacity: 1;
+}
+
+.skillCircle {
+  position: relative;
+  width: 11.938rem;
+  height: 11.938rem;
+  background: conic-gradient(#8075FF 3.6deg, #F8F0FB 0deg);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.125rem solid #F8F0FB;
+}
+.skillCircle::after {
+  content: "";
+  position: absolute;
+  width: 9.625rem;
+  height: 9.625rem;
+  border: 0.125rem solid #F8F0FB;
+  background-color: #303030;
+  border-radius: 50%;
+}
+.skillCircle .skillCircleText {
+  position: relative;
+  z-index: 89;
+}
+
+.btn-black-ol {
+  padding: 0.938rem;
+  border: 0.188rem solid #303030;
+  color: #303030;
+  border-radius: 0.625rem;
+  transition: 0.2s linear 0.2s;
+  position: relative;
+  overflow: hidden;
+  z-index: 99;
+}
+.btn-black-ol::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #303030;
+  left: -100%;
+  top: 0px;
+  z-index: -1;
+  transition: 0.5s;
+}
+.btn-black-ol:hover::after {
+  left: 0px;
+}
+.btn-black-ol:hover {
+  color: #F8F0FB;
+}
+
+.btn-red-ol {
+  padding: 0.938rem;
+  border: 0.188rem solid #EF6351;
+  color: #EF6351;
+  border-radius: 0.625rem;
+  transition: 0.2s linear 0.2s;
+  position: relative;
+  overflow: hidden;
+  z-index: 99;
+}
+.btn-red-ol::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #EF6351;
+  left: -100%;
+  top: 0px;
+  z-index: -1;
+  transition: 0.5s;
+}
+.btn-red-ol:hover::after {
+  left: 0px;
+}
+.btn-red-ol:hover {
+  color: #F8F0FB;
+}
+
+.btn-blue-ol {
+  padding: 0.938rem;
+  border: 0.188rem solid #8075FF;
+  color: #8075FF;
+  border-radius: 0.625rem;
+  transition: 0.2s linear 0.2s;
+  position: relative;
+  overflow: hidden;
+  z-index: 99;
+}
+.btn-blue-ol::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #8075FF;
+  left: -100%;
+  top: 0px;
+  z-index: -1;
+  transition: 0.5s;
+}
+.btn-blue-ol:hover::after {
+  left: 0px;
+}
+.btn-blue-ol:hover {
+  color: #F8F0FB;
+}
+
+.btn-white-ol {
+  padding: 0.938rem;
+  border: 0.188rem solid #F8F0FB;
+  color: #F8F0FB;
+  border-radius: 0.625rem;
+  transition: 0.2s linear 0.2s;
+  position: relative;
+  overflow: hidden;
+  z-index: 99;
+}
+.btn-white-ol::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #F8F0FB;
+  left: -100%;
+  top: 0px;
+  z-index: -1;
+  transition: 0.5s;
+}
+.btn-white-ol:hover::after {
+  left: 0px;
+}
+.btn-white-ol:hover {
+  color: #F8F0FB;
+}
+
+.aboutBtn {
+  padding: 1.688rem 1.375rem;
+  border: 0.313rem solid #EF6351;
+  border-radius: 0.938rem;
+  transition: 0.3s;
+}
+.aboutBtn:hover {
+  background-color: #EF6351;
+  color: #F8F0FB;
+  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.4784313725);
+}
+
+@keyframes gmailAnim {
+  from {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+.card-img {
+  object-fit: cover;
+  width: 22.188rem;
+  height: 10.875rem;
+  border-radius: 0.938rem;
+}
+
+.card-tag {
+  border: 0.063rem solid #EF6351;
+  border-radius: 10%;
+  padding: 0.5rem;
+}
+
+.card-btn {
+  border: 0.126rem solid #F8F0FB;
+  border-radius: 10%;
+  padding: 0.438rem 1.26rem;
+}
+
+.section {
+  height: 100vh;
+  background-color: #303030;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.photo {
+  width: 350px;
+  height: 350px;
+  border: 5px solid #8075FF;
+  background-image: url("./images/myphoto.jpg");
+  background-position: center;
+  background-size: 600px 600px;
+  border-radius: 50% 30% 40% 20%;
+  animation-name: photoAnim;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes photoAnim {
+  from {
+    border-radius: 50% 30% 40% 20%;
+  }
+  50% {
+    border-radius: 20% 50% 20% 60%;
+  }
+  to {
+    border-radius: 50% 30% 40% 20%;
+  }
+}
+
+#cloudRight{
+  transform: translateY(-5px);
 }

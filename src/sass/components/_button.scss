@@ -1,0 +1,56 @@
+@each $key, $val in $colors{
+    .btn-#{$key}-ol{
+        padding: 0.938rem;
+        border: 0.188rem solid $val;
+        color: $val;
+        border-radius: 0.625rem;
+        transition: 0.2s linear 0.2s;
+        position: relative;
+        overflow: hidden;
+        z-index: 99;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: $val;
+            left:-100%;
+            top:0px;
+            z-index: -1;
+            transition: 0.5s;
+        }
+
+        &:hover::after{
+            left:0px;
+        }
+
+        &:hover{
+            color: map-get($map: $colors, $key: 'white');
+        }
+
+    }
+}
+
+.aboutBtn{
+    padding: 1.688rem 1.375rem;
+    border: 0.313rem solid map-get($map: $colors, $key: 'red');
+    border-radius: 0.938rem;
+    transition: 0.3s;
+    &:hover{
+        background-color: map-get($map: $colors, $key: 'red');
+        color: #F8F0FB;
+        box-shadow: 5px 5px 10px #ffffff7a;
+    }
+}
+
+@keyframes gmailAnim {
+    from{
+        transform: translateY(-5px);
+    }
+    50%{
+            transform: translateY(5px);
+    }
+    to{
+        transform: translateY(-5px);
+    }
+}
