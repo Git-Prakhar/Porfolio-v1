@@ -12,8 +12,9 @@ import Twitter from '../images/twitter logo.png';
 
 export default function Home() {
   return (
-    <div className="section">
-      <div className="df" id='content' style={{ gap: '6.75rem' }}>
+    <>
+    <div className="section" >
+      <div className="df" id='content'>
         <div className="df-col" style={{ gap: '2rem' }} id='left'>
           <div className="text-white" id='name'>
             <div className="font-35-300">I'm <span className="font-35-700 text-red">Prakhar Khandelwal</span></div>
@@ -30,10 +31,10 @@ export default function Home() {
           <div className="df" id='bottom' style={{ gap: '0.688rem' }}>
             <a href='https://docs.google.com/document/d/12ITkVp00ZnDATpYEIn9SUjMoIGD9xgV1s2TUELjW4VM/edit?usp=sharing' target='_blank' rel='noreferrer' className='btn-red-ol font-25-400'>Resume</a>
             <div id="social" className="df" style={{ gap: '0.625rem' }}>
-              <a href='https://www.instagram.com/__prakhar.__/' target='_blank'  rel='noreferrer'><img src={Insta} alt="" className="img-35 op-70" /></a>
-              <a href='https://www.linkedin.com/in/prakhar-khandelwal-8a988528b/' target='_blank'  rel='noreferrer'><img src={LinkedIn} alt="" className="img-35 op-70" /></a>
-              <a href='https://github.com/Git-Prakhar' target='_blank'  rel='noreferrer'><img src={Github} alt="" className="img-35 op-70" /></a>
-              <a href='https://twitter.com/____Prakhar__' target='_blank'  rel='noreferrer'><img src={Twitter} alt="" className="img-35 op-70" /></a>
+              <a href='https://www.instagram.com/__prakhar.__/' target='_blank' rel='noreferrer'><img src={Insta} alt="" className="img-35 op-70" /></a>
+              <a href='https://www.linkedin.com/in/prakhar-khandelwal-8a988528b/' target='_blank' rel='noreferrer'><img src={LinkedIn} alt="" className="img-35 op-70" /></a>
+              <a href='https://github.com/Git-Prakhar' target='_blank' rel='noreferrer'><img src={Github} alt="" className="img-35 op-70" /></a>
+              <a href='https://twitter.com/____Prakhar__' target='_blank' rel='noreferrer'><img src={Twitter} alt="" className="img-35 op-70" /></a>
             </div>
           </div>
         </div>
@@ -42,5 +43,6 @@ export default function Home() {
         </div>
       </div>
     </div>
+    </>
   )
 }

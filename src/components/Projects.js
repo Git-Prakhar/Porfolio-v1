@@ -4,9 +4,9 @@ import foodiev2 from '../images/foodiev2.png'
 
 export default function Projects() {
   return (
-    <div className="section">
-      <div className="df-col" style={{ gap: '1.875rem', marginTop: '5rem' }}>
-        <div className="df" style={{ gap: '4.75rem' }}>
+    <div className="section" id='projectSection'>
+      <div className="df-col" id='allProjectCardHolder'>
+        <div className="df projectCardHolder">
           <div className="card-img df font-30-600 text-black" style={{ backgroundColor: '#F8F0FB' }}>This Portfolio</div>
           <div className="df-col" style={{ gap: '1.125rem' }}>
             <div className="font-25-400 text-white">This Portfolio</div>
@@ -17,7 +17,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        <div className="df" style={{ gap: '4.75rem' }}>
+        <div className="df projectCardHolder">
           <img src={foodiev2} alt='project2' className="card-img"></img>
           <div className="df-col" style={{ gap: '1.125rem' }}>
             <div className="font-25-400 text-white">Foodie Version 2</div>
@@ -31,7 +31,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        <div className="df" style={{ gap: '4.75rem' }}>
+        <div className="df projectCardHolder">
           <img src={foodiev1} alt='project2' className="card-img"></img>
           <div className="df-col" style={{ gap: '1.125rem' }}>
             <div className="font-25-400 text-white">Foodie Version 1</div>

@@ -96,7 +96,7 @@ export default function About() {
     <div className="section">
       <div className="df-col text-white aboutParts ai-fs-col ap-active" style={{ gap: '1.438rem' }} id='mySelf'>
         <div className="font-25-400">I'm <span className='font-25-700 text-red'>Prakhar Khandelwal</span><br />I'm a <span className='text-red'>Student Frontend Developer</span> from India</div>
-        <div className="font-20-300" style={{ width: '51.125rem' }}>I am an aspiring Full Stack Developer currently focusing on Frontend. I am enthusiastic about gaining hands-on experience in frontend development. With a strong foundation in HTML, CSS, and JavaScript, I am eager to apply my skills to real-world projects and contribute to creating visually appealing and user-friendly websites.</div>
+        <div className="font-20-300" id='mySelfCon'>I am an aspiring Full Stack Developer currently focusing on Frontend. I am enthusiastic about gaining hands-on experience in frontend development. With a strong foundation in HTML, CSS, and JavaScript, I am eager to apply my skills to real-world projects and contribute to creating visually appealing and user-friendly websites.</div>
       </div>
       <div className="df-col text-white dis-off aboutParts ai-fs-col" style={{ gap: '0.313rem' }} id='education'>
         <div className="font-25-400">Currently pursuing <span className="font-25-700 text-red">BCA</span> degree <br /><span className="font-25-200 text-blue">Acropolis Institute of Technology And Research, Indore</span></div>
@@ -128,7 +128,7 @@ export default function About() {
           <div className="font-30-500 text-white op-70">React</div>
         </div>
       </div>
-      <div className="df text-white dis-off aboutParts ai-fs-col" style={{ gap: '5.938rem' }} id='soft-skills'>
+      <div className="df text-white dis-off aboutParts ai-fs-col" id='soft-skills'>
         <div className='df-col text-white font-30-400' id="ssleft">
           <span className='op-70'>SASS</span>
           <span className='op-70'>Graphic Design</span>

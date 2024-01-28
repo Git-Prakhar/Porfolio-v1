@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -279,6 +280,7 @@ ul {
   top: 2.813rem;
   z-index: 99;
 }
+
 .navbar .navRoam {
   position: absolute;
   z-index: -1;
@@ -290,6 +292,7 @@ ul {
   border-radius: 0.938rem;
   transition: 0.3s;
 }
+
 .navbar .navbtns {
   color: #F8F0FB;
   font-size: 1.563rem;
@@ -305,6 +308,7 @@ ul {
   bottom: 2.813rem;
   z-index: 99;
 }
+
 .navbar-bot .navRoam {
   position: absolute;
   z-index: -1;
@@ -316,6 +320,7 @@ ul {
   border-radius: 0.938rem;
   transition: 0.3s;
 }
+
 .navbar-bot .navbtns {
   color: #F8F0FB;
   font-size: 1.563rem;
@@ -356,21 +361,25 @@ ul {
     opacity: 0;
     transform: translateX(10px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0px);
   }
 }
+
 @keyframes fade-out {
   from {
     opacity: 1;
     transform: translateX(0px);
   }
+
   to {
     opacity: 0;
     transform: translateX(-10px);
   }
 }
+
 .container {
   width: 100%;
   display: flex;
@@ -394,6 +403,7 @@ ul {
   opacity: 0.6;
   transition: 0.3s;
 }
+
 .op-60:hover {
   opacity: 1;
 }
@@ -402,6 +412,7 @@ ul {
   opacity: 0.7;
   transition: 0.3s;
 }
+
 .op-70:hover {
   opacity: 1;
 }
@@ -417,6 +428,7 @@ ul {
   align-items: center;
   border: 0.125rem solid #F8F0FB;
 }
+
 .skillCircle::after {
   content: "";
   position: absolute;
@@ -426,6 +438,7 @@ ul {
   background-color: #303030;
   border-radius: 50%;
 }
+
 .skillCircle .skillCircleText {
   position: relative;
   z-index: 89;
@@ -441,6 +454,7 @@ ul {
   overflow: hidden;
   z-index: 99;
 }
+
 .btn-black-ol::after {
   content: "";
   position: absolute;
@@ -452,9 +466,11 @@ ul {
   z-index: -1;
   transition: 0.5s;
 }
+
 .btn-black-ol:hover::after {
   left: 0px;
 }
+
 .btn-black-ol:hover {
   color: #F8F0FB;
 }
@@ -469,6 +485,7 @@ ul {
   overflow: hidden;
   z-index: 99;
 }
+
 .btn-red-ol::after {
   content: "";
   position: absolute;
@@ -480,9 +497,11 @@ ul {
   z-index: -1;
   transition: 0.5s;
 }
+
 .btn-red-ol:hover::after {
   left: 0px;
 }
+
 .btn-red-ol:hover {
   color: #F8F0FB;
 }
@@ -497,6 +516,7 @@ ul {
   overflow: hidden;
   z-index: 99;
 }
+
 .btn-blue-ol::after {
   content: "";
   position: absolute;
@@ -508,9 +528,11 @@ ul {
   z-index: -1;
   transition: 0.5s;
 }
+
 .btn-blue-ol:hover::after {
   left: 0px;
 }
+
 .btn-blue-ol:hover {
   color: #F8F0FB;
 }
@@ -525,6 +547,7 @@ ul {
   overflow: hidden;
   z-index: 99;
 }
+
 .btn-white-ol::after {
   content: "";
   position: absolute;
@@ -536,9 +559,11 @@ ul {
   z-index: -1;
   transition: 0.5s;
 }
+
 .btn-white-ol:hover::after {
   left: 0px;
 }
+
 .btn-white-ol:hover {
   color: #F8F0FB;
 }
@@ -549,6 +574,7 @@ ul {
   border-radius: 0.938rem;
   transition: 0.3s;
 }
+
 .aboutBtn:hover {
   background-color: #EF6351;
   color: #F8F0FB;
@@ -559,13 +585,16 @@ ul {
   from {
     transform: translateY(-5px);
   }
+
   50% {
     transform: translateY(5px);
   }
+
   to {
     transform: translateY(-5px);
   }
 }
+
 .card-img {
   object-fit: cover;
   width: 22.188rem;
@@ -595,12 +624,12 @@ ul {
 }
 
 .photo {
-  width: 350px;
-  height: 350px;
+  width: 21.875rem;
+  height: 21.875rem;
   border: 5px solid #8075FF;
   background-image: url("./images/myphoto.jpg");
   background-position: center;
-  background-size: 600px 600px;
+  background-size: 37.5rem 37.5rem;
   border-radius: 50% 30% 40% 20%;
   animation-name: photoAnim;
   animation-duration: 5s;
@@ -612,14 +641,150 @@ ul {
   from {
     border-radius: 50% 30% 40% 20%;
   }
+
   50% {
     border-radius: 20% 50% 20% 60%;
   }
+
   to {
     border-radius: 50% 30% 40% 20%;
   }
 }
 
-#cloudRight{
+#cloudRight {
   transform: translateY(-5px);
+}
+
+#content {
+  gap: 6.75rem;
+}
+
+#mySelfCon {
+  width: 51.125rem;
+}
+
+#soft-skills {
+  gap: 5.938rem;
+}
+
+.projectCardHolder {
+  gap: 4.75rem;
+}
+
+
+
+#allProjectCardHolder {
+  gap: 1.875rem;
+  margin-top: 5rem;
+}
+
+#gmailHolder {
+  gap: 1.063rem;
+}
+
+@media screen and (max-width: 1220px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 957px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  html {
+    font-size: 12px;
+  }
+
+  #content {
+    flex-direction: column-reverse;
+    gap: 3rem
+  }
+
+  #mySelf,
+  #education {
+    width: 80%;
+  }
+
+  #mySelfCon {
+    width: 100%;
+  }
+
+  #skills {
+    flex-wrap: wrap;
+    width: 65%;
+  }
+
+  #soft-skills {
+    gap: 1rem;
+  }
+
+  .projectCardHolder {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #allProjectCardHolder {
+    gap: 4rem;
+  }
+
+  #gmailHolder {
+    flex-direction: column;
+  }
+
+  #projectSection {
+    height: 140vh;
+  }
+}
+
+#mobileNavbar {
+  display: none;
+}
+
+@media screen and (max-width: 466px) {
+  html {
+    font-size: 10px;
+  }
+
+  #mainNavbar {
+    display: none;
+  }
+
+  #mobileNavbar {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  #nextNavbarBtn {
+    position: absolute;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-image: url('./images/icons8-arrow-right-96.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #projectSection {
+    height: 100vh;
+  }
+  #allProjectCardHolder{
+    margin-top: 0px;
+  }
+  #prevNavbarBtn{
+    position: absolute;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    background-image: url('./images/icons8-arrow-right-96.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    rotate: 180deg;
+  }
 }
